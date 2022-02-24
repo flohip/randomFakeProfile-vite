@@ -9,7 +9,7 @@ const lastName = chance.last();
 const eMail = `${firstName}.${lastName}@neuefische.de`; // chance.email({domain: 'example.com'})
 const phoneNumber = chance.phone();
 const profession = chance.profession();
-const birthday = chance.integer({ min: 1910, max: 2010 });
+const birthday = chance.integer({ min: 1960, max: 2004 });
 const city = chance.city();
 const favouriteAnimal = chance.animal();
 const favouriteNumber = chance.integer({ min: 1, max: 9 });
@@ -22,7 +22,7 @@ document.querySelector("#app").innerHTML = `
   <li><a href="#" target="_blank">${phoneNumber}</a></li>
   </ul>
   <p> Hey, my name is ${firstName} and I am a ${profession}.</p> 
-  <p> I was born in the year of ${birthday} in the city of ${city}.</p> 
+  <p> I was born in the year of ${birthday} in the city of ${city}.</p>
   <p> My favorite animal is the ${favouriteAnimal}.</p>
   <p> But I also love numbers! My favorite one is ${favouriteNumber}.</p>
 `;
